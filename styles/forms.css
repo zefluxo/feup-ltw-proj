@@ -1,0 +1,136 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.button-form {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background-color: var(--dark-main-highlight);
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.button-form:disabled {
+    background-color: var(--dark-sub-highlight);
+}
+
+.signup-form {
+    padding-top: 100px;
+}
+
+#box {
+    background-color: var(--sub-color-light);
+    margin: auto;
+    width: 300px;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.acc-create {
+    margin-top: 10px;
+}
+
+.input-container {
+    position: relative;
+}
+
+.input-container>label {
+    position: absolute;
+    top: 16px;
+    left: 8px;
+    transition: all 0.2s ease-in-out;
+    cursor: text;
+}
+
+.text-input:is(:not(:placeholder-shown), :focus)+label {
+    font-size: 0.7em;
+    top: 5px;
+}
+
+.inputs-box, #inputs-extra {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 15px;
+}
+
+.password-eye {
+    position: absolute;
+    right: 10px;
+    top: 13px;
+}
+
+.password {
+    padding-right: 40px;
+}
+
+.counter {
+    position: absolute;
+    right: 10px;
+}
+
+.textbox {
+    width: 100%;
+    resize: none;
+    border-radius: 5px;
+    padding: 10px;
+    border-color: rgba(0, 0, 0, 0.3);
+}
+
+.textbox:focus {
+    border-color: rgba(0, 0, 0, 1);
+}
+
+.textbox:is(:not(:placeholder-shown), :focus)+label {
+    top: -13px;
+    background-color: white;
+}
+
+.top-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-pic-input {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-pic-input > img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.profile-pic-input span {
+    position: absolute;
+    bottom: 0px;
+    left: 54%;
+    background-color: var(--dark-main-highlight);
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.profile-pic-input > input {
+    display: none;
+}
+
+#dish-categories {
+    margin-bottom: 20px;
+}
